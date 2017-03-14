@@ -1,0 +1,41 @@
+<p>
+  databinding works!
+</p>
+
+<h3>String Interpolation</h3>
+{{stringInerpolation}} &nbsp; <input type="text" value="data">
+
+<hr>
+<h3>Property and Event Binding</h3>
+
+Dom element Properties like <b><![CDATA[ <img [src]=".."> ]]></b> and Event be like <b><![CDATA[ <img (click) = "...">]]></b> <br/><br>
+
+Directive Properties like <b><![CDATA[ <div [ngClass]=".."> ]]></b> and Event be like <b><![CDATA[ <div (ngsubmit) = "...">]]></b><br/><br>
+
+Component Properties like <b><![CDATA[ <cmp [initObj]=".."> ]]></b> and Event be like <b><![CDATA[ <cmp (rndEvent) = "...">]]></b><br>
+<hr>
+<h3>Custom Binding</h3>
+Property Binding "@Input() popertyName: string;"<br/><br>
+
+Event Binding "@Input() eventName = new EventEmitter();"
+<br><br>
+
+<input type="text" [value]="numberInterpolation">
+
+<p [ngClass]="{redBorder: true}" [ngStyle]="{color: 'green'}">Is this styled?</p><br>
+<hr>
+<h3>Custom Property Binding</h3>
+result = {{result}}
+<hr>
+<h3>Event Binding</h3>
+
+<button (click)="OnClicked()">Click here</button>
+<br>
+<hr>
+<h3>Two Way Binding</h3>
+<input type="text" [(ngModel)]="person.Name" >
+<input type="text" [(ngModel)]="person.Name" >
+
+<hr>
+
+
