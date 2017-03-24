@@ -12,3 +12,34 @@
 <h3>Component Events</h3>
 <app-lifecycle *ngIf="!delete"></app-lifecycle>
 <button (click)='delete = true'>Delete/Call ngOnDestroy</button>
+
+
+<h3>Directives</h3>
+<b>Attribute Directives: ngClass/ngStyle</b>
+<div [ngStyle]="{'background-color': 'red'}"></div>
+
+
+<hr>
+<h3>Custom Attribute directive</h3>
+<div highlight [defaultColor]="'red'"  [highlightColor]="'blue'">Some Text</div>
+
+<hr>
+<h3>Structural Directives  *ngIf</h3>
+
+<div *ngIf="switch">Conditional Text</div>
+<button (click)="OnSwitch()">Switch</button>
+<hr>
+<h3>*ngFor</h3>
+<ul>
+  <li *ngFor="let item of items;let i= index; trackBy">{{item}} -- (Index: {{i}})</li>
+</ul>
+<hr>
+<h3>ngSwitch</h3>
+<div [ngSwitch]="value">
+  <p *ngSwitchCase="10">10</p>
+  <p *ngSwitchCase="100">100</p>
+  <p *ngSwitchDefault>Default</p>
+</div>
+<br><br>
+
+
